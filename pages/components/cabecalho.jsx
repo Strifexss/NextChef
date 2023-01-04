@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import Image from "next/image"
+import Fork from "../icons/Fork.png"
 
 const Main = styled.div`
     display: flex;
@@ -62,11 +64,22 @@ const Buttoes = styled.div`
         }
     }
 `
-
+const Logo = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h1{
+        margin: 1rem;
+    }
+`
 export default function Cabecalho() {
     return(
         <Main>
-            <h1>Foodie</h1>
+            <Logo>
+                <h1>Foodie</h1>
+                <Image src={Fork} alt="Logo" width={50} height={50}/>
+            </Logo>
             <Links>
                 <p>Home</p>
                 <p>Store</p>
