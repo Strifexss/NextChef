@@ -6,6 +6,12 @@ const Main = styled.div`
     align-items: center;
     height: 3rem;
     margin: 1rem;
+
+    @media (max-height: 900px){
+        display: flex;
+        flex-direction: column;
+
+    }
 `
 
 const Links = styled.div`
@@ -23,6 +29,16 @@ const Links = styled.div`
            color: #5e5569;
         }
     }
+
+    @media (max-width: 600px){
+        display: flex;
+        justify-content: space-between;
+        
+        p{
+            margin: 0.5rem;
+        }
+    }
+    
 `
 
 const Buttoes = styled.div`
@@ -55,7 +71,7 @@ export default function Cabecalho() {
                 <p>Home</p>
                 <p>Store</p>
                 <p>Services</p>
-                <p>Contact us</p>
+                <p>Contact</p>
                 <p>SOBRE</p>
             </Links>
             <Buttoes>
