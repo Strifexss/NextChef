@@ -34,6 +34,11 @@ const Flexar = styled.div`
 
     img{
         margin: 1rem;
+        cursor: pointer;
+    }
+
+    p {
+        cursor: pointer;
     }
 `
 const Textos = styled.div`
