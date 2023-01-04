@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import Image from "next/image"
 import Fork from "../icons/Fork.png"
+import { useEffect, useState } from "react"
 
 const Main = styled.div`
     display: flex;
@@ -74,6 +75,7 @@ const Logo = styled.div`
     }
 `
 export default function Cabecalho() {
+
     return(
         <Main>
             <Logo>
